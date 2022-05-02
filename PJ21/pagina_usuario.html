@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<title>Pagina inicial</title>
+	
+
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet" href="index.css">
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+		<img src="public/img/logo_size_invert.jpg"width="135" height="41">
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- links -->
+		<div id="menu" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Quem somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Serviços</a>
+				</li>
+
+				
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Fale conosco</a>
+				</li>
+
+				<li>
+					<a class="nav-link" href="login.html">Sair</a>
+				</li>
+
+				<form class="form-inline">
+					<div class="input-group">
+						<input type="text" placeholder="Buscar" name="buscar" class="form-control input-group-prepend">
+						<input type="submit" class="btn btn-dark input-group-append">
+					</div>
+				</form>
+			</ul>
+		</div>
+
+	</nav>
+
+		
+	
+
+	<div class="jumbotron jumbotron">
+		<div class="container-fluid">
+			<h1 class="display-4">Bem vindo!</h1>
+			<p class="lead">Pagina incial para controle de chamados</p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<div class="card border border-info">
+						<div class="card-body">
+						<h5 class="card-title">Meus Chamados</h5>
+						<p class="card-text">Acompanhe seus chamados abertos, fechados e em andamento. </p>
+						<a href="historico_user.html" class="btn btn-dark">abrir</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-6">
+				<div class="card border border-info">
+						<div class="card-body">
+						<h5 class="card-title">Solicitação</h5>
+						<p class="card-text">Abra sua nova solicitação. </p>
+						<a href="abrir_chamado.html" class="btn btn-dark">abrir</a>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+		</div>
+
+	</div>
+	
+	<br><br>
+
+
+	<footer>
+		<!-- JS -->
+		<script src="public/js/jquery.js"></script>
+		<script src="public/js/bootstrap.bundle.min.js"></script>
+	</footer>
+
+</body>
+</html>

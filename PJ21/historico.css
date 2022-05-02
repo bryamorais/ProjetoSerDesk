@@ -1,0 +1,11 @@
+body{
+	background: #f2f2f2;
+}
+
+#graficoPizza{
+  height:500px;
+  width: 670px;
+  position: absolute; top: 480px; left: 390px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}

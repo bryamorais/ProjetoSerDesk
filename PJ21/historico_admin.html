@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="historico.css">
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script>
+
+
+    google.charts.load('current', {'packages':['corechart']});
+
+    function desenharPizza (){
+
+        var tabela = new google.visualization.DataTable();
+        tabela.addColumn('string','categorias');
+        tabela.addColumn('number','valores');
+        tabela.addRows([
+
+            ['Chamados Feitos',2000],
+            ['Chamados Abertos',500],
+            ['Chamados Vencidos',230],
+            
+        ]);
+
+
+        var opcoes = {
+            'title':'Chamados' 
+            
+
+        };
+
+        var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
+        grafico.draw(tabela, opcoes);
+}
+
+google.charts.setOnLoadCallback(desenharPizza);
+
+
+</script>
+</head>
+<body>
+    <div id="graficoPizza">
+
+    </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <img src="public/img/logo_size_invert.jpg"width="135" height="41">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- links -->
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="pagina_admin.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fale conosco</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="login.html">Sair</a>
+                </li>
+
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input type="text" placeholder="Buscar" name="buscar" class="form-control input-group-prepend">
+                        <input type="submit" class="btn btn-dark input-group-append">
+                    </div>
+                </form>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container" style="margin: top 250px">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Chamado</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>chamado</td>
+                    <td>ABERTO</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>chamado</td>
+                    <td>ABERTO</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>chamado</td>
+                    <td>ABERTO</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>chamado</td>
+                    <td>ABERTO</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>chamado</td>
+                    <td>ABERTO</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>chamado</td>
+                    <td>ABERTO</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>chamado</td>
+                    <td>ABERTO</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+    <title>Historico</title>
+
+<body>
+<footer>
+        <!-- JS -->
+        <script src="public/js/jquery.js"></script>
+        <script src="public/js/bootstrap.bundle.min.js"></script>
+    </footer>
+</body>
+</html>

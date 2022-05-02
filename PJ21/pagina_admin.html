@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<title>Pagina incial</title>
+
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet" >
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+		<img src="public/img/logo_size_invert.jpg"width="135" height="41">
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- links -->
+		<div id="menu" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Quem somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Serviços</a>
+				</li>
+
+				
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Fale conosco</a>
+				</li>
+
+				<li>
+					<a class="nav-link" href="login.html">Sair</a>
+				</li>
+
+				<form class="form-inline">
+					<div class="input-group">
+						<input type="text" placeholder="Buscar" name="buscar" class="form-control input-group-prepend">
+						<input type="submit" class="btn btn-dark input-group-append">
+					</div>
+				</form>
+			</ul>
+		</div>
+
+	</nav>
+
+		
+	
+
+	<div class="jumbotron jumbotron">
+		<div class="container-fluid">
+			<h1 class="display-4">Bem vindo!</h1>
+			<p class="lead">Pagina incial do administrador</p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<div class="card border border-info">
+						<div class="card-body">
+						<h5 class="card-title">Historico Geral</h5>
+						<p class="card-text">Historico geral de todos chamado abertos,fechado,vencidos e em andamento. </p>
+						<a href="historico_admin.html" class="btn btn-dark">Abrir</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-6">
+				<div class="card border border-info">
+						<div class="card-body">
+						<h5 class="card-title">Registrar</h5>
+						<p class="card-text">Registrar novo funcionario no sistema de chamados. </p>
+						<a href="registrar_novo_usuario.html" class="btn btn-dark">Registar</a>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+		</div>
+
+	</div>
+	
+	<br><br>
+
+
+	<footer>
+		<!-- JS -->
+		<script src="public/js/jquery.js"></script>
+		<script src="public/js/bootstrap.bundle.min.js"></script>
+	</footer>
+
+</body>
+</html>
